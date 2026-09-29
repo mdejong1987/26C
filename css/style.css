@@ -6,8 +6,24 @@
 body,
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
 }
 
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+h2 span {
+  border-bottom: 1px solid white;
+}
+
+section {
+  padding: 50px 0;
+}
+
+/* ==============================header============================= */
 header {
   background-image: url("/img/Hero.png");
   background-position: center center;
@@ -15,79 +31,119 @@ header {
   background-size: cover;
   height: 550px;
   position: relative;
+}
 
-  .header-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+}
+
+header p {
+  display: inline-block;
+  background-color: rgba(74, 84, 92, 0.7);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 6px;
+  padding: 10px 18px;
+  width: fit-content;
+}
+
+
+.top-header {
+  background-color: rgba(74, 84, 92, 0.5);
+  padding: 20px 0;
+}
+
+.wrapper {
+  width: 986px;
+  margin: 0 auto;
+}
+
+.top-header-content {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  span {
+    color: #4bcaff;
+  }
+}
+
+nav {
+  ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: max-content;
+    list-style: none;
 
-    p {
-      display: inline-block;
-      background-color: rgba(74, 84, 92, 0.7);
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: 300;
-      font-size: 28px;
-      text-align: center;
-      margin-bottom: 6px;
-      padding: 10px 18px;
-      width: fit-content;
-    }
-  }
+    li {
+      padding: 0 5px;
 
-  .top-header {
-    background-color: rgba(74, 84, 92, 0.5);
-    padding: 20px 0;
-
-    .top-header-content {
-      width: 986px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .logo {
-        a {
-          text-decoration: none;
-          color: #fff;
-          text-transform: uppercase;
-          font-weight: bold;
-          font-size: 28px;
-
-          span {
-            color: #4bcaff;
-          }
-        }
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        border: 3px solid transparent;
+        padding: 10px;
       }
 
-      nav {
-        ul {
-          display: flex;
-          list-style: none;
-
-          li {
-            padding: 0 5px;
-            a {
-              color: #fff;
-              text-transform: uppercase;
-              text-decoration: none;
-              font-weight: bold;
-              border: 3px solid transparent;
-              padding: 10px;
-            }
-
-            a:hover {
-              color: #4bcaff;
-              border-color: #4bcaff;
-            }
-          }
-        }
+      a:hover {
+        color: #4bcaff;
+        border-color: #4bcaff;
       }
     }
   }
+}
+
+
+
+/* =================================section service========================= */
+
+/* h2{
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+h2 span{
+  border-bottom: 1px solid white;
+}
+section{
+  padding: 50px 0;
+} */
+#service-main {
+  background-color: #4bcaff;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service img {
+  margin-bottom: 20px;
+
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
